@@ -52,7 +52,7 @@ SVR:
 	;
 	
 enum SVMKernel:
-	linear='linear'|poly='poly'|rbf='rbf'
+	rbf='rbf'|linear='linear'|poly='poly'
 ;
 
 DT:

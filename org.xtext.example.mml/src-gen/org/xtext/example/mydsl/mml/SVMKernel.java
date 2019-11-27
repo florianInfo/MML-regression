@@ -21,6 +21,16 @@ import org.eclipse.emf.common.util.Enumerator;
 public enum SVMKernel implements Enumerator
 {
   /**
+   * The '<em><b>Rbf</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #RBF_VALUE
+   * @generated
+   * @ordered
+   */
+  RBF(0, "rbf", "rbf"),
+
+  /**
    * The '<em><b>Linear</b></em>' literal object.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -28,7 +38,7 @@ public enum SVMKernel implements Enumerator
    * @generated
    * @ordered
    */
-  LINEAR(0, "linear", "linear"),
+  LINEAR(1, "linear", "linear"),
 
   /**
    * The '<em><b>Poly</b></em>' literal object.
@@ -38,39 +48,7 @@ public enum SVMKernel implements Enumerator
    * @generated
    * @ordered
    */
-  POLY(1, "poly", "poly"),
-
-  /**
-   * The '<em><b>Rbf</b></em>' literal object.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #RBF_VALUE
-   * @generated
-   * @ordered
-   */
-  RBF(2, "rbf", "rbf");
-
-  /**
-   * The '<em><b>Linear</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #LINEAR
-   * @model name="linear"
-   * @generated
-   * @ordered
-   */
-  public static final int LINEAR_VALUE = 0;
-
-  /**
-   * The '<em><b>Poly</b></em>' literal value.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #POLY
-   * @model name="poly"
-   * @generated
-   * @ordered
-   */
-  public static final int POLY_VALUE = 1;
+  POLY(2, "poly", "poly");
 
   /**
    * The '<em><b>Rbf</b></em>' literal value.
@@ -81,7 +59,29 @@ public enum SVMKernel implements Enumerator
    * @generated
    * @ordered
    */
-  public static final int RBF_VALUE = 2;
+  public static final int RBF_VALUE = 0;
+
+  /**
+   * The '<em><b>Linear</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #LINEAR
+   * @model name="linear"
+   * @generated
+   * @ordered
+   */
+  public static final int LINEAR_VALUE = 1;
+
+  /**
+   * The '<em><b>Poly</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #POLY
+   * @model name="poly"
+   * @generated
+   * @ordered
+   */
+  public static final int POLY_VALUE = 2;
 
   /**
    * An array of all the '<em><b>SVM Kernel</b></em>' enumerators.
@@ -92,9 +92,9 @@ public enum SVMKernel implements Enumerator
   private static final SVMKernel[] VALUES_ARRAY =
     new SVMKernel[]
     {
+      RBF,
       LINEAR,
       POLY,
-      RBF,
     };
 
   /**
@@ -159,9 +159,9 @@ public enum SVMKernel implements Enumerator
   {
     switch (value)
     {
+      case RBF_VALUE: return RBF;
       case LINEAR_VALUE: return LINEAR;
       case POLY_VALUE: return POLY;
-      case RBF_VALUE: return RBF;
     }
     return null;
   }

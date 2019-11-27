@@ -737,37 +737,37 @@ public class MmlGrammarAccess extends AbstractGrammarElementFinder {
 	public class SVMKernelElements extends AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.Mml.SVMKernel");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final EnumLiteralDeclaration cLinearEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
-		private final Keyword cLinearLinearKeyword_0_0 = (Keyword)cLinearEnumLiteralDeclaration_0.eContents().get(0);
-		private final EnumLiteralDeclaration cPolyEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
-		private final Keyword cPolyPolyKeyword_1_0 = (Keyword)cPolyEnumLiteralDeclaration_1.eContents().get(0);
-		private final EnumLiteralDeclaration cRbfEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
-		private final Keyword cRbfRbfKeyword_2_0 = (Keyword)cRbfEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cRbfEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cRbfRbfKeyword_0_0 = (Keyword)cRbfEnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cLinearEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cLinearLinearKeyword_1_0 = (Keyword)cLinearEnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cPolyEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cPolyPolyKeyword_2_0 = (Keyword)cPolyEnumLiteralDeclaration_2.eContents().get(0);
 		
 		//enum SVMKernel:
-		//	linear | poly | rbf;
+		//	rbf | linear | poly;
 		public EnumRule getRule() { return rule; }
 		
-		//linear | poly | rbf
+		//rbf | linear | poly
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
-		//linear
-		public EnumLiteralDeclaration getLinearEnumLiteralDeclaration_0() { return cLinearEnumLiteralDeclaration_0; }
-		
-		//'linear'
-		public Keyword getLinearLinearKeyword_0_0() { return cLinearLinearKeyword_0_0; }
-		
-		//poly
-		public EnumLiteralDeclaration getPolyEnumLiteralDeclaration_1() { return cPolyEnumLiteralDeclaration_1; }
-		
-		//'poly'
-		public Keyword getPolyPolyKeyword_1_0() { return cPolyPolyKeyword_1_0; }
-		
 		//rbf
-		public EnumLiteralDeclaration getRbfEnumLiteralDeclaration_2() { return cRbfEnumLiteralDeclaration_2; }
+		public EnumLiteralDeclaration getRbfEnumLiteralDeclaration_0() { return cRbfEnumLiteralDeclaration_0; }
 		
 		//'rbf'
-		public Keyword getRbfRbfKeyword_2_0() { return cRbfRbfKeyword_2_0; }
+		public Keyword getRbfRbfKeyword_0_0() { return cRbfRbfKeyword_0_0; }
+		
+		//linear
+		public EnumLiteralDeclaration getLinearEnumLiteralDeclaration_1() { return cLinearEnumLiteralDeclaration_1; }
+		
+		//'linear'
+		public Keyword getLinearLinearKeyword_1_0() { return cLinearLinearKeyword_1_0; }
+		
+		//poly
+		public EnumLiteralDeclaration getPolyEnumLiteralDeclaration_2() { return cPolyEnumLiteralDeclaration_2; }
+		
+		//'poly'
+		public Keyword getPolyPolyKeyword_2_0() { return cPolyPolyKeyword_2_0; }
 	}
 	public class ValidationMetricElements extends AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.Mml.ValidationMetric");
@@ -987,7 +987,7 @@ public class MmlGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//enum SVMKernel:
-	//	linear | poly | rbf;
+	//	rbf | linear | poly;
 	public SVMKernelElements getSVMKernelAccess() {
 		return eSVMKernel;
 	}

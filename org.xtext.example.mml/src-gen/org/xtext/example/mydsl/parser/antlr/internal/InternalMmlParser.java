@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalMmlParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_INT", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'datainput'", "'separator'", "'mlframework'", "'algorithm'", "'SVR'", "'C='", "'kernel='", "'DT'", "'DecisionTree'", "'RandomForest'", "'RF'", "'StochasticGradientDescent'", "'SGD'", "'GradientBoostingRegressor'", "'GTB'", "'.'", "'formula'", "'~'", "'+'", "'CrossValidation'", "'{'", "'numRepetitionCross'", "'}'", "'TrainingTest'", "'percentageTraining'", "','", "';'", "'scikit-learn'", "'R'", "'Weka'", "'xgboost'", "'linear'", "'poly'", "'rbf'", "'mean_squared_error'", "'mean_absolute_error'", "'mean_absolute_percentage_error'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_INT", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'datainput'", "'separator'", "'mlframework'", "'algorithm'", "'SVR'", "'C='", "'kernel='", "'DT'", "'DecisionTree'", "'RandomForest'", "'RF'", "'StochasticGradientDescent'", "'SGD'", "'GradientBoostingRegressor'", "'GTB'", "'.'", "'formula'", "'~'", "'+'", "'CrossValidation'", "'{'", "'numRepetitionCross'", "'}'", "'TrainingTest'", "'percentageTraining'", "','", "';'", "'scikit-learn'", "'R'", "'Weka'", "'xgboost'", "'rbf'", "'linear'", "'poly'", "'mean_squared_error'", "'mean_absolute_error'", "'mean_absolute_percentage_error'"
     };
     public static final int T__19=19;
     public static final int T__15=15;
@@ -3271,7 +3271,7 @@ public class InternalMmlParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSVMKernel"
-    // InternalMml.g:1196:1: ruleSVMKernel returns [Enumerator current=null] : ( (enumLiteral_0= 'linear' ) | (enumLiteral_1= 'poly' ) | (enumLiteral_2= 'rbf' ) ) ;
+    // InternalMml.g:1196:1: ruleSVMKernel returns [Enumerator current=null] : ( (enumLiteral_0= 'rbf' ) | (enumLiteral_1= 'linear' ) | (enumLiteral_2= 'poly' ) ) ;
     public final Enumerator ruleSVMKernel() throws RecognitionException {
         Enumerator current = null;
 
@@ -3283,10 +3283,10 @@ public class InternalMmlParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalMml.g:1202:2: ( ( (enumLiteral_0= 'linear' ) | (enumLiteral_1= 'poly' ) | (enumLiteral_2= 'rbf' ) ) )
-            // InternalMml.g:1203:2: ( (enumLiteral_0= 'linear' ) | (enumLiteral_1= 'poly' ) | (enumLiteral_2= 'rbf' ) )
+            // InternalMml.g:1202:2: ( ( (enumLiteral_0= 'rbf' ) | (enumLiteral_1= 'linear' ) | (enumLiteral_2= 'poly' ) ) )
+            // InternalMml.g:1203:2: ( (enumLiteral_0= 'rbf' ) | (enumLiteral_1= 'linear' ) | (enumLiteral_2= 'poly' ) )
             {
-            // InternalMml.g:1203:2: ( (enumLiteral_0= 'linear' ) | (enumLiteral_1= 'poly' ) | (enumLiteral_2= 'rbf' ) )
+            // InternalMml.g:1203:2: ( (enumLiteral_0= 'rbf' ) | (enumLiteral_1= 'linear' ) | (enumLiteral_2= 'poly' ) )
             int alt19=3;
             switch ( input.LA(1) ) {
             case 42:
@@ -3313,15 +3313,15 @@ public class InternalMmlParser extends AbstractInternalAntlrParser {
 
             switch (alt19) {
                 case 1 :
-                    // InternalMml.g:1204:3: (enumLiteral_0= 'linear' )
+                    // InternalMml.g:1204:3: (enumLiteral_0= 'rbf' )
                     {
-                    // InternalMml.g:1204:3: (enumLiteral_0= 'linear' )
-                    // InternalMml.g:1205:4: enumLiteral_0= 'linear'
+                    // InternalMml.g:1204:3: (enumLiteral_0= 'rbf' )
+                    // InternalMml.g:1205:4: enumLiteral_0= 'rbf'
                     {
                     enumLiteral_0=(Token)match(input,42,FOLLOW_2); 
 
-                    				current = grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_0, grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0());
+                    				current = grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_0, grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0());
                     			
 
                     }
@@ -3330,15 +3330,15 @@ public class InternalMmlParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalMml.g:1212:3: (enumLiteral_1= 'poly' )
+                    // InternalMml.g:1212:3: (enumLiteral_1= 'linear' )
                     {
-                    // InternalMml.g:1212:3: (enumLiteral_1= 'poly' )
-                    // InternalMml.g:1213:4: enumLiteral_1= 'poly'
+                    // InternalMml.g:1212:3: (enumLiteral_1= 'linear' )
+                    // InternalMml.g:1213:4: enumLiteral_1= 'linear'
                     {
                     enumLiteral_1=(Token)match(input,43,FOLLOW_2); 
 
-                    				current = grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_1, grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1());
+                    				current = grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_1, grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1());
                     			
 
                     }
@@ -3347,15 +3347,15 @@ public class InternalMmlParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalMml.g:1220:3: (enumLiteral_2= 'rbf' )
+                    // InternalMml.g:1220:3: (enumLiteral_2= 'poly' )
                     {
-                    // InternalMml.g:1220:3: (enumLiteral_2= 'rbf' )
-                    // InternalMml.g:1221:4: enumLiteral_2= 'rbf'
+                    // InternalMml.g:1220:3: (enumLiteral_2= 'poly' )
+                    // InternalMml.g:1221:4: enumLiteral_2= 'poly'
                     {
                     enumLiteral_2=(Token)match(input,44,FOLLOW_2); 
 
-                    				current = grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
-                    				newLeafNode(enumLiteral_2, grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2());
+                    				current = grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+                    				newLeafNode(enumLiteral_2, grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2());
                     			
 
                     }

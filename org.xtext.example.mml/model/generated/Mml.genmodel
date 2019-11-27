@@ -17,9 +17,9 @@
       <genEnumLiterals ecoreEnumLiteral="Mml.ecore#//FrameworkLang/XGBoost"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="Mml.ecore#//SVMKernel">
+      <genEnumLiterals ecoreEnumLiteral="Mml.ecore#//SVMKernel/rbf"/>
       <genEnumLiterals ecoreEnumLiteral="Mml.ecore#//SVMKernel/linear"/>
       <genEnumLiterals ecoreEnumLiteral="Mml.ecore#//SVMKernel/poly"/>
-      <genEnumLiterals ecoreEnumLiteral="Mml.ecore#//SVMKernel/rbf"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="Mml.ecore#//ValidationMetric">
       <genEnumLiterals ecoreEnumLiteral="Mml.ecore#//ValidationMetric/MSE"/>

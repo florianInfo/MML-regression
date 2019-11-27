@@ -40,9 +40,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kernel" eType="#//SVMKernel"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SVMKernel">
-    <eLiterals name="linear" literal="linear"/>
-    <eLiterals name="poly" value="1" literal="poly"/>
-    <eLiterals name="rbf" value="2" literal="rbf"/>
+    <eLiterals name="rbf" literal="rbf"/>
+    <eLiterals name="linear" value="1" literal="linear"/>
+    <eLiterals name="poly" value="2" literal="poly"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DT" eSuperTypes="#//MLAlgorithm">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="max_depth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>

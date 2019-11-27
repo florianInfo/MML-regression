@@ -859,21 +859,21 @@ rule__SVMKernel__Alternatives
 	}
 :
 	(
-		{ before(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0()); }
-		('linear')
-		{ after(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0()); }
-	)
-	|
-	(
-		{ before(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1()); }
-		('poly')
-		{ after(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1()); }
-	)
-	|
-	(
-		{ before(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2()); }
+		{ before(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0()); }
 		('rbf')
-		{ after(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2()); }
+		{ after(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1()); }
+		('linear')
+		{ after(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1()); }
+	)
+	|
+	(
+		{ before(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2()); }
+		('poly')
+		{ after(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2()); }
 	)
 ;
 finally {

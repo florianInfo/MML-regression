@@ -1,0 +1,7 @@
+datainput "foo.csv"
+mlframework scikit-learn
+algorithm RF
+TrainingTest {
+	percentageTraining 90
+}
+mean_squared_error

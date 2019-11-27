@@ -57,7 +57,7 @@ public class SVRImpl extends MLAlgorithmImpl implements SVR
    * @generated
    * @ordered
    */
-  protected static final SVMKernel KERNEL_EDEFAULT = SVMKernel.LINEAR;
+  protected static final SVMKernel KERNEL_EDEFAULT = SVMKernel.RBF;
 
   /**
    * The cached value of the '{@link #getKernel() <em>Kernel</em>}' attribute.

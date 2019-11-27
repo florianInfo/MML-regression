@@ -1202,26 +1202,26 @@ ruleSVMKernel returns [Enumerator current=null]
 }:
 	(
 		(
-			enumLiteral_0='linear'
+			enumLiteral_0='rbf'
 			{
-				$current = grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_0, grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0());
+				$current = grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_0, grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0());
 			}
 		)
 		    |
 		(
-			enumLiteral_1='poly'
+			enumLiteral_1='linear'
 			{
-				$current = grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_1, grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1());
+				$current = grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_1, grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1());
 			}
 		)
 		    |
 		(
-			enumLiteral_2='rbf'
+			enumLiteral_2='poly'
 			{
-				$current = grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
-				newLeafNode(enumLiteral_2, grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2());
+				$current = grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+				newLeafNode(enumLiteral_2, grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2());
 			}
 		)
 	)

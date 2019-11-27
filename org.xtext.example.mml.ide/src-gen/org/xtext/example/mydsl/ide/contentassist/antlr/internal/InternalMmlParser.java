@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalMmlParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_INT", "RULE_STRING", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'DT'", "'DecisionTree'", "'RandomForest'", "'RF'", "'StochasticGradientDescent'", "'SGD'", "'GradientBoostingRegressor'", "'GTB'", "','", "';'", "'scikit-learn'", "'R'", "'Weka'", "'xgboost'", "'linear'", "'poly'", "'rbf'", "'mean_squared_error'", "'mean_absolute_error'", "'mean_absolute_percentage_error'", "'datainput'", "'separator'", "'mlframework'", "'algorithm'", "'SVR'", "'C='", "'kernel='", "'.'", "'formula'", "'~'", "'+'", "'CrossValidation'", "'{'", "'numRepetitionCross'", "'}'", "'TrainingTest'", "'percentageTraining'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_INT", "RULE_STRING", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'DT'", "'DecisionTree'", "'RandomForest'", "'RF'", "'StochasticGradientDescent'", "'SGD'", "'GradientBoostingRegressor'", "'GTB'", "','", "';'", "'scikit-learn'", "'R'", "'Weka'", "'xgboost'", "'rbf'", "'linear'", "'poly'", "'mean_squared_error'", "'mean_absolute_error'", "'mean_absolute_percentage_error'", "'datainput'", "'separator'", "'mlframework'", "'algorithm'", "'SVR'", "'C='", "'kernel='", "'.'", "'formula'", "'~'", "'+'", "'CrossValidation'", "'{'", "'numRepetitionCross'", "'}'", "'TrainingTest'", "'percentageTraining'"
     };
     public static final int T__19=19;
     public static final int T__15=15;
@@ -2748,13 +2748,13 @@ public class InternalMmlParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SVMKernel__Alternatives"
-    // InternalMml.g:856:1: rule__SVMKernel__Alternatives : ( ( ( 'linear' ) ) | ( ( 'poly' ) ) | ( ( 'rbf' ) ) );
+    // InternalMml.g:856:1: rule__SVMKernel__Alternatives : ( ( ( 'rbf' ) ) | ( ( 'linear' ) ) | ( ( 'poly' ) ) );
     public final void rule__SVMKernel__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalMml.g:860:1: ( ( ( 'linear' ) ) | ( ( 'poly' ) ) | ( ( 'rbf' ) ) )
+            // InternalMml.g:860:1: ( ( ( 'rbf' ) ) | ( ( 'linear' ) ) | ( ( 'poly' ) ) )
             int alt11=3;
             switch ( input.LA(1) ) {
             case 25:
@@ -2781,20 +2781,20 @@ public class InternalMmlParser extends AbstractInternalContentAssistParser {
 
             switch (alt11) {
                 case 1 :
-                    // InternalMml.g:861:2: ( ( 'linear' ) )
+                    // InternalMml.g:861:2: ( ( 'rbf' ) )
                     {
-                    // InternalMml.g:861:2: ( ( 'linear' ) )
-                    // InternalMml.g:862:3: ( 'linear' )
+                    // InternalMml.g:861:2: ( ( 'rbf' ) )
+                    // InternalMml.g:862:3: ( 'rbf' )
                     {
-                     before(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0()); 
-                    // InternalMml.g:863:3: ( 'linear' )
-                    // InternalMml.g:863:4: 'linear'
+                     before(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0()); 
+                    // InternalMml.g:863:3: ( 'rbf' )
+                    // InternalMml.g:863:4: 'rbf'
                     {
                     match(input,25,FOLLOW_2); 
 
                     }
 
-                     after(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_0()); 
+                     after(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_0()); 
 
                     }
 
@@ -2802,20 +2802,20 @@ public class InternalMmlParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalMml.g:867:2: ( ( 'poly' ) )
+                    // InternalMml.g:867:2: ( ( 'linear' ) )
                     {
-                    // InternalMml.g:867:2: ( ( 'poly' ) )
-                    // InternalMml.g:868:3: ( 'poly' )
+                    // InternalMml.g:867:2: ( ( 'linear' ) )
+                    // InternalMml.g:868:3: ( 'linear' )
                     {
-                     before(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1()); 
-                    // InternalMml.g:869:3: ( 'poly' )
-                    // InternalMml.g:869:4: 'poly'
+                     before(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1()); 
+                    // InternalMml.g:869:3: ( 'linear' )
+                    // InternalMml.g:869:4: 'linear'
                     {
                     match(input,26,FOLLOW_2); 
 
                     }
 
-                     after(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_1()); 
+                     after(grammarAccess.getSVMKernelAccess().getLinearEnumLiteralDeclaration_1()); 
 
                     }
 
@@ -2823,20 +2823,20 @@ public class InternalMmlParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalMml.g:873:2: ( ( 'rbf' ) )
+                    // InternalMml.g:873:2: ( ( 'poly' ) )
                     {
-                    // InternalMml.g:873:2: ( ( 'rbf' ) )
-                    // InternalMml.g:874:3: ( 'rbf' )
+                    // InternalMml.g:873:2: ( ( 'poly' ) )
+                    // InternalMml.g:874:3: ( 'poly' )
                     {
-                     before(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2()); 
-                    // InternalMml.g:875:3: ( 'rbf' )
-                    // InternalMml.g:875:4: 'rbf'
+                     before(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2()); 
+                    // InternalMml.g:875:3: ( 'poly' )
+                    // InternalMml.g:875:4: 'poly'
                     {
                     match(input,27,FOLLOW_2); 
 
                     }
 
-                     after(grammarAccess.getSVMKernelAccess().getRbfEnumLiteralDeclaration_2()); 
+                     after(grammarAccess.getSVMKernelAccess().getPolyEnumLiteralDeclaration_2()); 
 
                     }
 
